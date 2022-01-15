@@ -51,7 +51,7 @@ save_plot(ax.get_figure(), "start-time-main-sleep")
 
 # %%
 ax = sns.countplot(x="hour", hue="year", data=df[df["mainSleep"]])
-save_plot(ax.get_figure(), "start-time-main-sleep")
+save_plot(ax.get_figure(), "start-time-main-sleep-per-year")
 
 
 # %%
