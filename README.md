@@ -21,4 +21,11 @@ It will also install `jupyterlab` for notebook experience.
 
 ## Usage
 
+    python inspect_sleep.py
+
 ## Credits
+
+- [Logo][1] by [Webalys][2]
+
+[1]: https://www.iconfinder.com/icons/7763742/technology_fitbit_icon
+[2]: https://www.iconfinder.com/webalys
