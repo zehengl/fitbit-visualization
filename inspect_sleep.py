@@ -69,6 +69,22 @@ save_plot(ax.get_figure(), "average-duration-of-sleep-by-year")
 
 
 # %%
+df["weekday"] = df["dateOfSleep"].dt.weekday
+ave_duration_of_sleep_by_weekday = (
+    df[df["mainSleep"]].groupby("weekday")[["duration"]].mean().reset_index()
+)
+ave_duration_of_sleep_by_weekday["duration"] /= 60 * 60 * 1000
+
+ax = sns.barplot(
+    x="weekday",
+    y="duration",
+    data=ave_duration_of_sleep_by_weekday,
+)
+ax.set_xticklabels(["Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"])
+save_plot(ax.get_figure(), "average-duration-of-sleep-by-weekday")
+
+
+# %%
 df["month"] = df["dateOfSleep"].dt.month
 ave_duration_of_sleep_by_month = (
     df[df["mainSleep"]].groupby("month")[["duration"]].mean().reset_index()
