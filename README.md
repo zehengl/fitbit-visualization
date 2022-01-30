@@ -29,6 +29,7 @@ Create a `.env` file with your data folder name. For example,
 Then simply run the script.
 
     python inspect_sleep.py
+    python inspect_weight.py
 
 ## Credits
 
