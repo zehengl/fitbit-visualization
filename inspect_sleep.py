@@ -1,26 +1,16 @@
 # %%
-from os import getenv
-from pathlib import Path
-
 import pandas as pd
 import seaborn as sns
-from dotenv import load_dotenv
 
-load_dotenv()
-
-name = getenv("NAME")
-output = Path("output")
-output.mkdir(exist_ok=True)
-
-
-# %%
-def save_plot(fig, name):
-    fig.savefig(output / f"{name}.png", dpi=300, bbox_inches="tight")
+from common import save_plot, data
 
 
 # %%
 df = pd.concat(
-    map(pd.read_json, Path(f"MyFitbitData/{name}/Sleep").glob("sleep-*.json")),
+    map(
+        pd.read_json,
+        (data / "Sleep").glob("sleep-*.json"),
+    ),
     ignore_index=True,
 )
 
