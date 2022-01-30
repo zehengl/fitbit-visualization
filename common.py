@@ -6,11 +6,13 @@ from dotenv import load_dotenv
 load_dotenv()
 
 name = getenv("NAME")
+assert name is not None
 
 output = Path("output")
 output.mkdir(exist_ok=True)
 
 data = Path(f"MyFitbitData/{name}")
+assert data.exists()
 
 
 def save_plot(fig, name):
