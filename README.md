@@ -21,6 +21,13 @@ It will also install `jupyterlab` for notebook experience.
 
 ## Usage
 
+Create a `.env` file with your data folder name. For example,
+
+    # .env
+    name=xxx
+
+Then simply run the script.
+
     python inspect_sleep.py
 
 ## Credits
