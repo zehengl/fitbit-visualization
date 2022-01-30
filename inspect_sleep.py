@@ -24,7 +24,7 @@ df["year"] = df["dateOfSleep"].dt.year
 
 # %%
 ax = sns.countplot(x="year", data=df)
-save_plot(ax.get_figure(), "records-per-year")
+save_plot(ax.get_figure(), "sleep-records-per-year")
 
 
 # %%
