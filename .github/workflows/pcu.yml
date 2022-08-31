@@ -8,4 +8,4 @@ jobs:
   refreshDeps:
     runs-on: ubuntu-latest
     steps:
-      - uses: zehengl/refresh-python-dependency@v0.1.1
+      - uses: zehengl/refresh-python-dependency@v0.1.2
