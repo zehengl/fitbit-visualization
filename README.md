@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="https://cdn1.iconfinder.com/data/icons/logos-1/24/technology-fitbit-512.png" alt="logo" height="196">
+    <img src="https://cdn1.iconfinder.com/data/icons/logos-1/24/technology-fitbit-512.png" alt="logo" height="128">
 </div>
 
 # fitbit-visualization
@@ -16,8 +16,6 @@ fitbit visualization
     pip install -r requirements.txt
 
 Use `pip install -r requirements-dev.txt` for development.
-It will install `pylint` and `black` to enable linting and auto-formatting.
-It will also install `jupyterlab` for notebook experience.
 
 ## Usage
 
