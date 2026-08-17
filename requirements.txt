@@ -1,4 +1,4 @@
 pandas==3.0.5
-python-dotenv==1.2.2
+python-dotenv==1.2.3
 seaborn==0.13.2
 tqdm==4.70.0
